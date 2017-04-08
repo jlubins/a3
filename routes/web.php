@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/assignments/{assignment}', 'AssignmentController@show');
+
+Route::get('/assignments/pwgenerator/generate', 'WordArrayController@generate');
+
+Route::get('/assignments/piglatin/translate', 'PigLatinController@translate');
+
+//Route::get('/generate', 'AssignmentController@generate');
+
+//Route::get('/translate', 'AssignmentController@translate');
