@@ -21,6 +21,8 @@ Route::get('/assignments/pwgenerator/generate', 'WordArrayController@generate');
 
 Route::get('/assignments/piglatin/translate', 'PigLatinController@translate');
 
+Route::get('/assignments/cipher/encipher', 'CipherController@encipher');
+
 //Route::get('/generate', 'AssignmentController@generate');
 
 //Route::get('/translate', 'AssignmentController@translate');
