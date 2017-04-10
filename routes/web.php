@@ -23,6 +23,4 @@ Route::get('/assignments/piglatin/translate', 'PigLatinController@translate');
 
 Route::get('/assignments/cipher/encipher', 'CipherController@encipher');
 
-//Route::get('/generate', 'AssignmentController@generate');
-
-//Route::get('/translate', 'AssignmentController@translate');
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');

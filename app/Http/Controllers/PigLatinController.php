@@ -10,6 +10,12 @@ class PigLatinController extends Controller
     //
     public function translate(Request $request)
     {
+
+        $this->validate($request, [
+        'inputText' => 'required',
+        'suffix' => 'required'
+        ]);
+
         $getText = $request->input('inputText', null);
         $suffix = $request->input('suffix', null);
         $inputText = preg_split("/\s*\b\s*/", $getText);

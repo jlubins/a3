@@ -9,6 +9,11 @@ class CipherController extends Controller
 {
     public function encipher(Request $request)
     {
+        $this->validate($request, [
+        'inputText' => 'required',
+        'cipherChoice' => 'required'
+        ]);
+
         $getText = $request->input('inputText', null);
         $cipher = $request->input('cipherChoice', null);
         $shiftValue = $request->input('shiftValue', null);
@@ -32,11 +37,7 @@ class CipherController extends Controller
                     $j = $j % $keylength;
 
                     if (ctype_lower($cipherKey[$j])) {
-                        dump(ord($cipherKey[$j]));
                         $cipherKey[$j] = ((ord($cipherKey[$j]) - 97) % 26);
-                        dump(ord($cipherKey[$j]));
-                        dump($j);
-                        dump((integer) $cipherKey[$j]);
                     } elseif (ctype_upper($cipherKey[$j])) {
                         $cipherKey[$j] = ((ord($cipherKey[$j]) - 65) % 26);
                     }
