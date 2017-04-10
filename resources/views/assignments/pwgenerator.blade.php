@@ -15,7 +15,7 @@
         <form method='GET' action='/assignments/pwgenerator/generate'>
             <div class="row">
                 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                    <label for='text'>Select which base text you would like to use to generate your password.</label>
+                    <label for='text'>Select which base text you would like to use to generate your password (required)</label>
                     <div class="dropdown dropdown-dark">
                         <select name='text' id='text' class="dropdown-select">
                           <option value='choose'>Choose one...</option>
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <label for='wordNumber'>Select the number of words you would like to be generated.</label>
+                    <label for='wordNumber'>Select the number of words you would like to be generated (required)</label>
                     <div class="inputGroupContainer">
                       <div class="input-group">
                         <textarea class="form-control" cols="5" rows="1" id="wordNumber" name="wordNumber"></textarea>
