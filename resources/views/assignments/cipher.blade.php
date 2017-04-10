@@ -14,7 +14,7 @@
 @section('content')
     <h1>A3: Ciphers</h1>
 
-    <form class="clearfix" role="form" method='GET' action='/assignments/cipher/encipher'>
+    <form class="clearfix" method='GET' action='/assignments/cipher/encipher'>
 
     <div class="form-group">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -33,8 +33,8 @@
       <label class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Cipher:</label>
       <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
         <fieldset class='radio'>
-          <label id="cipherChoice"><input type='radio' name='cipherChoice' value='vigenere'>Vigenere</label>
-          <label id="cipherChoice"><input type='radio' name='cipherChoice' value='caesar'>Caesar</label>
+          <label><input type='radio' name='cipherChoice' value='vigenere'>Vigenere</label>
+          <label><input type='radio' name='cipherChoice' value='caesar'>Caesar</label>
         </fieldset>
       </div>
     </div>
@@ -45,7 +45,7 @@
       </div>
       <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
         <div class="dropdown dropdown-dark">
-          <select name="shiftValue" class="dropdown-select">
+          <select name="shiftValue" id="shiftValue" class="dropdown-select">
             <option value='1'>1</option>
             <option value='2'>2</option>
             <option value='3'>3</option>

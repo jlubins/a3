@@ -28,12 +28,12 @@
                 <div class="col-sm-4">
                     <label for='wordNumber'>Select the number of words you would like to be generated.</label>
                     <div class="dropdown dropdown-dark">
-                        <select name="wordNumber" class="dropdown-select">
-                <option value='3'>3</option>
-                <option value='4'>4</option>
-                <option value='5'>5</option>
-                <option value='6'>6</option>
-              </select>
+                        <select name="wordNumber" id="wordNumber" class="dropdown-select">
+                          <option value='3'>3</option>
+                          <option value='4'>4</option>
+                          <option value='5'>5</option>
+                          <option value='6'>6</option>
+                        </select>
                     </div>
                 </div>
 

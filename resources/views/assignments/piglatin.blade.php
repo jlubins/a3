@@ -12,7 +12,7 @@ Pig Latin Translator
 
 <h1>A3: Pig Latin Translator</h1>
 
-<form class="clearfix" role="form" method='GET' action='/assignments/piglatin/translate'>
+<form class="clearfix" method='GET' action='/assignments/piglatin/translate'>
 
     <div class="form-group">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -44,17 +44,17 @@ Pig Latin Translator
         <label class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Ending:</label>
         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
             <fieldset class='radio'>
-                <label id="suffix"><input type='radio' name='suffix' value='ay'> ay</label>
+                <label><input type='radio' name='suffix' value='ay'> ay</label>
                 <p>
                     <p>
-                        <label id="suffix"><input type='radio' name='suffix' value='a'> a</label>
+                        <label><input type='radio' name='suffix' value='a'> a</label>
             </fieldset>
         </div>
     </div>
 
     <div class="form-group">
         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <label for="lengthCheckbox" class="control-label">Optional:</label>
+            <label class="control-label">Optional:</label>
         </div>
         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
             <fieldset class='checkboxes'>

@@ -36,7 +36,6 @@
 						<li><a href="/assignments/pwgenerator">Password Generator</a></li>
 						<li><a href="/assignments/piglatin">Pig Latin Translator</a></li>
 						<li><a href="/assignments/cipher">Ciphers</a></li>
-						</li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -54,8 +53,6 @@
 	<footer>
 		John Lubinski &copy; {{ date('Y') }}
 	</footer>
-
-	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
