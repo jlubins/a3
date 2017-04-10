@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Pig Latin Translator
+    Ciphers
 @endsection
 
 
@@ -30,7 +30,7 @@
     </div>
 
     <div class="form-group">
-      <label class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Cipher:</label>
+      <label class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Cipher (required):</label>
       <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
         <fieldset class='radio'>
           <label><input type='radio' name='cipherChoice' value='vigenere'>Vigenere</label>
@@ -41,7 +41,7 @@
 
     <div class="form-group">
       <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-        <label for='shiftValue'>Caesar Displacement:</label>
+        <label for='shiftValue'>Displacement (required for Caesar):</label>
       </div>
       <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
         <div class="dropdown dropdown-dark">
@@ -56,7 +56,7 @@
     </div>
 
     <div class="form-group">
-      <label for="seedText" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Vigenere Key:</label>
+      <label for="seedText" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Key (required for Vigenere):</label>
         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
           <div class="inputGroupContainer">
             <div class="input-group">
@@ -67,7 +67,7 @@
       </div>
 
     <div class="form-group">
-      <label for="inputText" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Input:</label>
+      <label for="inputText" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Input (required):</label>
       <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
         <div class="inputGroupContainer">
           <div class="input-group">

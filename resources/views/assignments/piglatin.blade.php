@@ -29,7 +29,7 @@ Pig Latin Translator
 
 
     <div class="form-group">
-        <label for="inputText" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Input:</label>
+        <label for="inputText" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Input (required):</label>
         <div class="inputGroupContainer">
             <div class="input-group">
                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
@@ -41,7 +41,7 @@ Pig Latin Translator
 
 
     <div class="form-group">
-        <label class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Ending:</label>
+        <label class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Ending (required):</label>
         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
             <fieldset class='radio'>
                 <label><input type='radio' name='suffix' value='ay'> ay</label>
