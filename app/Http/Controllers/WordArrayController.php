@@ -25,6 +25,10 @@ class WordArrayController extends Controller
     {
         global $text;
 
+        $this->validate($request, [
+        'wordNumber' => 'required',
+        ]);
+
         $text = $request->input('text', null);
         $wordnumber = $request->input('wordNumber', null);
         $isUppercase = isset($request->uppercaseCheckbox);

@@ -52,6 +52,14 @@
               </h2>
             </div>
             <?php endif; ?>
+
+            @if(count($errors) > 0)
+              <ul>
+                  @foreach ($errors->all() as $error)
+                      <li><h2>{{ $error }}</h2></li>
+                  @endforeach
+              </ul>
+            @endif
         </form>
     </div>
 @endsection

@@ -26,12 +26,20 @@
             </p>
           </div>
         <?php endif; ?>
+
+        @if(count($errors) > 0)
+          <ul>
+              @foreach ($errors->all() as $error)
+                  <li>{{ $error }}</li>
+              @endforeach
+          </ul>
+        @endif
       </div>
     </div>
 
     <div class="form-group">
-      <label class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Cipher (required):</label>
-      <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+      <label class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Cipher (required):</label>
+      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
         <fieldset class='radio'>
           <label><input type='radio' name='cipherChoice' value='vigenere'>Vigenere</label>
           <label><input type='radio' name='cipherChoice' value='caesar'>Caesar</label>
@@ -40,10 +48,10 @@
     </div>
 
     <div class="form-group">
-      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
         <label for='shiftValue'>Displacement (required):</label>
       </div>
-      <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
         <div class="dropdown dropdown-dark">
           <select name="shiftValue" id="shiftValue" class="dropdown-select">
             <option value='1'>1</option>
@@ -56,8 +64,8 @@
     </div>
 
     <div class="form-group">
-      <label for="seedText" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Key (required):</label>
-        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+      <label for="seedText" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Key (required):</label>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
           <div class="inputGroupContainer">
             <div class="input-group">
               <textarea class="form-control" cols="75" rows="1" id="seedText" name="seedText"></textarea>
@@ -67,8 +75,8 @@
       </div>
 
     <div class="form-group">
-      <label for="inputText" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Input (required):</label>
-      <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+      <label for="inputText" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Input (required):</label>
+      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
         <div class="inputGroupContainer">
           <div class="input-group">
             <textarea class="form-control" cols="75" rows="5" id="inputText" name="inputText"></textarea>
